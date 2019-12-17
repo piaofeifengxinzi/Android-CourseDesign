@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ChooseFunctionActivity">
+    <ImageView
+        android:src="@drawable/welcome"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="zhuce"
+            android:text="注册" />
+        <Button
+            android:gravity="center"
+            android:text="打卡"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="daka"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="报表"
+            android:onClick="baobiao"
+            android:gravity="center"/>
+        <Button
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="jumpToBatchRegisterActivity"
+            android:text="@string/page_face_manage" />
+    </LinearLayout>
+
+</RelativeLayout>
